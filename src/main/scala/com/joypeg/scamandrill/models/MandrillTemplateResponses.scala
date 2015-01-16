@@ -26,15 +26,15 @@ case class MTemplateRenderResponse(html: Option[String]) extends MandrillRespons
  * @param created_at - the date and time the template was first created as a UTC string in YYYY-MM-DD HH:MM:SS format
  * @param updated_at - the date and time the template was last modified as a UTC string in YYYY-MM-DD HH:MM:SS format
  */
-case class MTemplateAddResponses(slug: String,
-                                 name: String,
+case class MTemplateAddResponses(slug: Option[String],
+                                 name: Option[String],
                                  labels: List[String],
-                                 code: String,
-                                 subject: String,
+                                 code: Option[String],
+                                 subject: Option[String],
                                  from_email: Option[String],
                                  from_name: Option[String],
-                                 text: String,
-                                 publish_name: String,
+                                 text: Option[String],
+                                 publish_name: Option[String],
                                  publish_code: Option[String],
                                  publish_subject: Option[String],
                                  publish_from_email: Option[String],

@@ -1,18 +1,18 @@
-import SonatypeKeys._
+// import SonatypeKeys._
 
-sonatypeSettings
+//  sonatypeSettings
 
 name := "scamandrill"
 
 organization := "com.github.dzsessona"
 
-profileName := "com.github.dzsessona"
+// profileName := "com.github.dzsessona"
 
 description := "Scala client for Mandrill api"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.4"
 
-crossScalaVersions := Seq("2.10.4", "2.11.2")
+crossScalaVersions := Seq("2.10.4", "2.11.4")
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -45,7 +45,7 @@ publishMavenStyle := true
 
 pomIncludeRepository := { _ => false }
 
-pgpPublicRing := file("/Users/dzsessona/Documents/mykeys/diegopgp.asc")
+// pgpPublicRing := file("/Users/dzsessona/Documents/mykeys/diegopgp.asc")
 
 pomExtra := (
   <url>http://github.com/dzsessona/scamandrill</url>
